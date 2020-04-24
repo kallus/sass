@@ -1,0 +1,4 @@
+cache
+fig
+*.pyc
+.venv

@@ -1,0 +1,4 @@
+Supplementary material to the article Kallus, Nelander, Jörnsten, Large-scale network estimation with structure-adaptive stability selection.
+
+Make sure all dependencies for GRAB are available. Then run make:
+> make
