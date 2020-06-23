@@ -25,7 +25,9 @@ for (method in methods) {
 
 # print
 for (method in methods) {
-  print(paste('MCC', method, ':', round(mean(mccs[[graph]][[method]]), 3)))
+  mn <- mean(mccs[[graph]][[method]])
+  print(paste('MCC', method, ':', round(mn, 3)))
+  print(paste('MCC confint', method, ':', round(mn-confint(lm(mccs[[graph]][[method]]~1))[1], 3)))
 }
 
 # remove
